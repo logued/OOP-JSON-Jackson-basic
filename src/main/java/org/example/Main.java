@@ -27,9 +27,8 @@ public class Main {
 
         // Converts: JSON string back to a Player instance
         // again, the names in the json string are matched
-        // to a corresponding setter in the Player class
-        // (if not found, field in Player takes on default
-        // value with no warning!)
+        // to a corresponding setter in the Player class.
+
         Player p = JSON_MAPPER.readValue(json, Player.class);
 
         System.out.println(p.getName()); // Alice
